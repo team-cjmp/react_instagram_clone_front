@@ -10,4 +10,4 @@
 ## 기술 스택
 
 * React
-* Node JS 
+* Node

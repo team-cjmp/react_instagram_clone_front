@@ -1,18 +1,12 @@
 import React, { PureComponent } from 'react';
+import UserProfile from './UserProfile';
 
 export class UserPage extends PureComponent {
   render() {
     return (
       <div>
         <main>
-          <header>
-            <div>avatar</div>
-            <section>
-              <div>profile</div>
-              <div>stat</div>
-              <div>bio</div>
-            </section>
-          </header>
+          <UserProfile />
           <div>
             <div>게시물</div>
             <div>저장됨</div>

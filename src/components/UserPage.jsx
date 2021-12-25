@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-
 import UserFooter from './UserFooter';
 import UserMain from './UserMain';
 

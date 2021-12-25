@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Navbar() {
+function NavBar() {
     const NavWrapper = styled.div`
         width: 100%;
         height: 60px;

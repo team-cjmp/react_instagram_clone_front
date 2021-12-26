@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import UserAvatar from './UserAvatar';
 
-export class UserProfile extends PureComponent {
+export class UserHeader extends PureComponent {
   render() {
     return (
       <div>
@@ -26,4 +26,4 @@ const Header = styled.header`
   margin-bottom: 44px;
 `;
 
-export default UserProfile;
+export default UserHeader;

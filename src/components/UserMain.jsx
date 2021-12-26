@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import UserProfile from './UserProfile';
+import UserHeader from './UserProfile';
 import UserTablist from './UserTablist';
 import UserArticle from './UserArticle';
 
@@ -10,7 +10,7 @@ export class UserMain extends PureComponent {
       <div>
         <Main>
           <DivMain>
-            <UserProfile />
+            <UserHeader />
             <UserTablist />
             <UserArticle />
           </DivMain>

@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import UserAvatar from './UserAvatar';
+import UserSection from './UserSection';
 
 export class UserHeader extends PureComponent {
   render() {
@@ -8,11 +9,7 @@ export class UserHeader extends PureComponent {
       <div>
         <Header>
           <UserAvatar />
-          <section>
-            <div>profile</div>
-            <div>stat</div>
-            <div>bio</div>
-          </section>
+          <UserSection />
         </Header>
       </div>
     );

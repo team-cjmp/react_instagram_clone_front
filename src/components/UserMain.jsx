@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import UserHeader from './UserProfile';
+import UserHeader from './UserHeader';
 import UserTablist from './UserTablist';
 import UserArticle from './UserArticle';
 

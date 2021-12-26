@@ -1,18 +1,12 @@
 import React, { PureComponent } from 'react';
-import UserProfile from './UserProfile';
 import UserFooter from './UserFooter';
-import UserTablist from './UserTablist';
-import UserArticle from './UserArticle';
+import UserMain from './UserMain';
 
 export class UserPage extends PureComponent {
   render() {
     return (
       <div>
-        <main>
-          <UserProfile />
-          <UserTablist />
-          <UserArticle />
-        </main>
+        <UserMain />
         <UserFooter />
       </div>
     );

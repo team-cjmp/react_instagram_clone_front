@@ -2,13 +2,21 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 const Wrapper = styled.div`
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 const Search = styled.input`
-  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+flex:1;
+  background-color: rgba(250, 250, 250,1);
   padding: 10px 20px;
   font-size:14px
   outline: none;
-  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border: 1px solid rgba(219, 219, 219,1);
+  
+  &:focus{
+      outline:none
+  }
 `;
 function NavSearch() {
   const [userSearch, setUserSearch] = useState('');

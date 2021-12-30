@@ -7,7 +7,7 @@ const Main = () => {
     <Container>
       <UserMain />
       <div>탭메뉴</div>
-      <div>피드페이지</div>
+      <div>게시물</div>
     </Container>
   );
 };

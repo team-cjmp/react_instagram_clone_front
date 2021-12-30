@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon, { Direct, Feed, Find, Home, New } from '../Icon';
+import { Direct, Feed, Find, Home, New } from '../Icon';
 const Wrapper = styled.div`
   flex: 1;
   display: flex;

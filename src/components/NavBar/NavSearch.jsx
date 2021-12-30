@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 const Search = styled.input`
-flex:1;
+  flex-basis:300px;
   background-color: rgba(250, 250, 250,1);
   padding: 10px 20px;
   font-size:14px
@@ -16,6 +16,9 @@ flex:1;
   
   &:focus{
       outline:none
+  }
+  &:placeholder-shown {
+    font-size: 14px;
   }
 `;
 function NavSearch() {

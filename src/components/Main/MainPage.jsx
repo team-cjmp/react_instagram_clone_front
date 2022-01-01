@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import UserProfile from './UserProfile/UserProfile';
+import TapMenu from './TapMenu/TapMenu';
+import { Route, Routes } from 'react-router-dom';
+import UserArticle from '../UserArticle';
 const Container = styled.div`
   position: relative;
   display: flex;
   max-width: 935px;
-  height: 150px;
+  width: 100%;
   flex-direction: column;
-  width: calc(100% - 40px);
+  width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 30px 20px 0;
-  margin: 0 240px 30px;
-  box-sizing: content-box;
 `;
-const Main = () => {
+const MainPage = () => {
   const DummyProfileData = {
     id: 1,
     아이디: 'USER1',
@@ -25,15 +25,21 @@ const Main = () => {
     프로필사진: 'https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg',
     alt: '',
   };
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <Container>
       <UserProfile Dummy={DummyProfileData} />
-      <hr />
-      <div>탭메뉴</div>
-      <div>게시물</div>
+      <TapMenu isActive={isActive} />
+      <article>
+        <Routes>
+          <Route patrh="/" element={<UserArticle />} />
+          <Route patrh="/channel" element={<UserArticle />} />
+          <Route patrh="/tagged" element={<UserArticle />} />
+        </Routes>
+      </article>
     </Container>
   );
 };
 
-export default Main;
+export default MainPage;

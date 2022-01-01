@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Container from './../../../UI/Container';
-import UserProfilePhoto from './UserProfilePhoto';
 import UserProfileDetail from './UserProfileDetail';
+import UserProfilePhoto from './UserProfilePhoto';
 const Wrapper = styled.div`
   position: relative;
   display: flex;
@@ -13,17 +12,22 @@ const Wrapper = styled.div`
   width: calc(100% - 40px);
   align-items: center;
   justify-content: center;
+  margin: 0 0 40px;
 `;
 const ProfilePhotoWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
+  height: 100%;
+  margin-right: 30px;
+  flex-basis: 0;
 `;
 const ProfileUserWrapper = styled.div`
   display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
+  flex-grow: 2;
+
+  height: 100%;
 `;
 const UserProfile = (props) => {
   return (

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import UserProfile from './UserProfile/UserProfile';
-import TapMenu from './TapMenu/TapMenu';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import styled from 'styled-components';
 import UserArticle from '../UserArticle';
+import TapMenu from './TapMenu/TapMenu';
+import UserProfile from './UserProfile/UserProfile';
 const Container = styled.div`
   position: relative;
   display: flex;
@@ -25,12 +25,11 @@ const MainPage = () => {
     프로필사진: 'https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg',
     alt: '',
   };
-  const [isActive, setIsActive] = useState(false);
 
   return (
     <Container>
       <UserProfile Dummy={DummyProfileData} />
-      <TapMenu isActive={isActive} />
+      <TapMenu />
       <article>
         <Routes>
           <Route patrh="/" element={<UserArticle />} />

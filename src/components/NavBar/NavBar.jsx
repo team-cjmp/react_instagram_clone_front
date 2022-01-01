@@ -12,6 +12,11 @@ function NavBar() {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    position: relative;
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
+    position: relative;
+    clear: both;
   `;
 
   return (

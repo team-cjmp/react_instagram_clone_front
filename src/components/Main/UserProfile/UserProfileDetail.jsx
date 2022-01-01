@@ -4,15 +4,18 @@ import Container from '../../../UI/Container';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  flex: 1;
+
+  min-width: 0%;
+  flex-grow: 0;
   justify-content: center;
-  item-aligns: center;
+  align-items: stretch;
 `;
 const Profile1 = styled.div`
   display: flex;
   gap: 30px;
   flex: 1;
+  justify-content: space-around;
+  item-aligns: center;
   & button {
     border: 1px solid transparent;
     border-radius: 4px;
@@ -32,11 +35,15 @@ const Profile2 = styled.div`
   display: flex;
   gap: 30px;
   flex: 1;
+  justify-content: space-around;
+  item-aligns: center;
 `;
 const Profile3 = styled.div`
   display: flex;
   gap: 30px;
   flex: 1;
+  justify-content: space-around;
+  item-aligns: center;
 `;
 
 const UserProfileDetail = (props) => {

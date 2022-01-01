@@ -4,6 +4,7 @@ import Container from './../../../UI/Container';
 import UserProfilePhoto from './UserProfilePhoto';
 import UserProfileDetail from './UserProfileDetail';
 const Wrapper = styled.div`
+  position: relative;
   display: flex;
   max-width: 935px;
   height: 150px;
@@ -17,7 +18,6 @@ const ProfilePhotoWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
 `;
 const ProfileUserWrapper = styled.div`
   display: flex;
@@ -27,16 +27,14 @@ const ProfileUserWrapper = styled.div`
 `;
 const UserProfile = (props) => {
   return (
-    <Container>
-      <Wrapper>
-        <ProfilePhotoWrapper>
-          <UserProfilePhoto Photo={props.Dummy.프로필사진} AltProps={props.Dummy.alt} />
-        </ProfilePhotoWrapper>
-        <ProfileUserWrapper>
-          <UserProfileDetail ProfileDetail={props.Dummy} />
-        </ProfileUserWrapper>
-      </Wrapper>
-    </Container>
+    <Wrapper>
+      <ProfilePhotoWrapper>
+        <UserProfilePhoto Photo={props.Dummy.프로필사진} AltProps={props.Dummy.alt} />
+      </ProfilePhotoWrapper>
+      <ProfileUserWrapper>
+        <UserProfileDetail ProfileDetail={props.Dummy} />
+      </ProfileUserWrapper>
+    </Wrapper>
   );
 };
 
